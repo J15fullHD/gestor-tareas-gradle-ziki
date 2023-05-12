@@ -27,7 +27,7 @@ public class GestorTareas {
     public String devolverTareas() {
         String todasLasTareas = "";
             for(Tarea tarea : tareas) {
-                todasLasTareas = todasLasTareas +  tarea + "\n";
+                todasLasTareas +=  tarea.getTextoTarea() + "\n";
             }
         return todasLasTareas;
     }
@@ -58,12 +58,12 @@ public class GestorTareas {
      * al gestor de tareas; si no tareas devuelve la cadena vacia. No requiere
      * parametros.
      */
-    public Tarea getTareaMasAntigua() {
-        Tarea tareaMasAntigua;
+    public String getTareaMasAntigua() {
+        String tareaMasAntigua;
         if(tareas.size() != 0) {
-            tareaMasAntigua = tareas.get(0);
+            tareaMasAntigua = tareas.get(0).getTextoTarea();
         } else {
-            tareaMasAntigua = null;
+            tareaMasAntigua = "";
         }
         return tareaMasAntigua;
     }
