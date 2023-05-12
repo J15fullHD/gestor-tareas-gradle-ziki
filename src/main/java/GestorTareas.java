@@ -121,9 +121,9 @@ public class GestorTareas {
             if(tareas.size() == 1) {
                 listadoTareas = tarea.getTextoTarea();
             } else if(contador == (tareas.size() - 1)){
-                listadoTareas += tarea;
+                listadoTareas += tarea.getTextoTarea();
             } else {
-                listadoTareas += tarea + ", ";
+                listadoTareas += tarea.getTextoTarea() + ", ";
             }
             contador++;
         }
