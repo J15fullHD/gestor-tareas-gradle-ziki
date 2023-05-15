@@ -263,7 +263,7 @@ public class GestorTareas {
         String listadoTareas = "";
         int contador = 0;
         while(contador < tareas.size()) {
-            listadoTareas = listadoTareas + (contador + 1) + ". " + tareas.get(contador) + "\n";
+            listadoTareas = listadoTareas + (contador + 1) + ". " + tareas.get(contador).getTextoTarea() + "\n";
             contador++;
         }
         return listadoTareas;
