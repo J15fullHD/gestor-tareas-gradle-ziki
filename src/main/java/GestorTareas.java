@@ -326,12 +326,12 @@ public class GestorTareas {
         int contador = 0;
         if(n > getNumeroTareas()) {
             while(contador < getNumeroTareas()) {
-                primerasNTareas = primerasNTareas + (contador + 1) + ". " + tareas.get(contador) + "\n";
+                primerasNTareas += (contador + 1) + ". " + tareas.get(contador).getTextoTarea() + "\n";
                 contador++;
             } 
         } else if(n > 0) {
             while(contador < n) {
-                primerasNTareas = primerasNTareas + (contador + 1) + ". " + tareas.get(contador) + "\n";
+                primerasNTareas += (contador + 1) + ". " + tareas.get(contador).getTextoTarea() + "\n";
                 contador++;
             }
         }
