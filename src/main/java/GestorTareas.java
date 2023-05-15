@@ -472,7 +472,7 @@ public class GestorTareas {
     public boolean marcarComoCompletada(int indice) {
         boolean exito = false;
         if(indice - 1 >= 0 && indice - 1 < getNumeroTareas()) {
-            if(tareas.get(indice - 1).getCompletada() == false) {
+            if(!tareas.get(indice - 1).getCompletada()) {
                 tareas.get(indice - 1).setCompletada();
                 exito = true;
             }
