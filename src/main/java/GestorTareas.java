@@ -169,7 +169,7 @@ public class GestorTareas {
         int indice = 1;
         for(Tarea tarea : tareas) {
             if(tarea.getTextoTarea().toLowerCase().contains("importante")) {
-                tareasImportantes += + indice + ". " + tarea + "\n";
+                tareasImportantes += indice + ". " + tarea.getTextoTarea() + "\n";
             }
             indice++;
         }
